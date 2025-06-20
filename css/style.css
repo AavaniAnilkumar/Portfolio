@@ -1,0 +1,114 @@
+body{
+    background-color: rgb(18, 17, 17);
+}
+/* Navbar background */
+.navbar {
+  background-color: rgb(18, 17, 17);
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  color: white;
+  position: relative;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+/* Underline animation */
+.navbar-nav .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #ffc107;
+  transition: width 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+  color: #ffc107;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+h2 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 500%;
+}
+
+.passionate {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: rgb(221, 195, 195);
+  font-weight: bolder;
+  margin-left: -50%;
+
+}
+/* Fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.about-section {
+  animation: fadeInUp 1s ease-in-out both;
+}
+
+/* Optional delay for image */
+.about-image {
+  animation: fadeInUp 1.2s ease-in-out both;
+}
+#discover_me{
+    /* align-items: center; */
+    margin-left: -40%;
+}
+
+
+.detailed-about {
+  background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  border-left: 6px solid #28a745;
+  transition: all 0.3s ease-in-out;
+}
+
+.detailed-about:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
+
+.detailed-about h3 {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.detailed-about p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #e0e0e0;
+}
+.about_detail{
+  background: linear-gradient(135deg, #1e1e1e, #2b2b2b);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+  border-left: 6px solid #28a745;
+  transition: all 0.3s ease-in-out;
+}
+.about_detail:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 20px rgba(0,0,0,0.4);
+}
